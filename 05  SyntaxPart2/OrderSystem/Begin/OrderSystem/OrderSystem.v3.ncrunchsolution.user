@@ -1,0 +1,25 @@
+﻿<SolutionConfiguration>
+  <Settings>
+    <AutoEnable>True</AutoEnable>
+    <CurrentEngineMode>Run all tests automatically [Global]</CurrentEngineMode>
+    <TestsWindowSplitterDistance>49.6805114746094%</TestsWindowSplitterDistance>
+    <TestsWindowTreeLayout>
+      <Column>
+        <Name>Name</Name>
+        <Width>177</Width>
+      </Column>
+      <Column>
+        <Name>Status</Name>
+        <Width>46</Width>
+      </Column>
+      <Column>
+        <Name>LastExecutionTime</Name>
+        <Width>52</Width>
+      </Column>
+      <Column>
+        <Name>GridNode</Name>
+        <Width>51</Width>
+      </Column>
+    </TestsWindowTreeLayout>
+  </Settings>
+</SolutionConfiguration>
