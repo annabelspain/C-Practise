@@ -1,0 +1,22 @@
+// We usually don't teach Array Ranges
+// If you have time to do this lab, read the slide in Appendix of this chapter
+
+        [Fact]
+        public void Get_Ranges()
+        {
+            // Fill in where the question marks are
+            int thirdFromEnd = numbers[^3];
+            Assert.Equal(???, thirdFromEnd);
+
+            int[] slice_34567 = numbers.ToArray()[2..^3];
+            Assert.Equal(???, slice_34567.Sum());
+
+            int[] slice_1234567 = numbers.ToArray()[..^3];
+            Assert.Equal(???, slice_1234567.Sum());
+
+            int[] slice_345678910 = numbers.ToArray()[2..];
+            Assert.Equal(???, slice_345678910.Sum());
+
+            int[] slice_12345678910 = numbers.ToArray()[..];
+            Assert.Equal(???, slice_12345678910.Sum());
+        }

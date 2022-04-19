@@ -1,0 +1,8 @@
+[Fact]
+public void Sum_Numbers_1_to_10_Easier()
+{
+    // There is no code to add here, just note the easier way of doing the previous test
+    // Sum is an extension method. If it is underline in red, use Ctrl-dot to
+    // add a using statement for the namespace that contains the extension method
+    Assert.Equal(55, numbers.Sum());
+}

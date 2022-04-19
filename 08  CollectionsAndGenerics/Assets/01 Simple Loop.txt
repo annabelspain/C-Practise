@@ -1,0 +1,7 @@
+[Fact]
+public void Sum_Numbers_1_to_10()
+{
+    // Do a foreach loop across all the elements in the 'numbers' list
+    // and sum the total
+    Assert.Equal(55, total);
+}

@@ -1,0 +1,24 @@
+[Fact]
+public void Battersea_Dogs_Home()
+{
+    // Add a .Net Standard class library called Pets to the solution
+    // In this class library, create 2 new classes Dog and DogsHome
+    // Populate them like this
+
+    // Dog has an overloaded ctor taking a string name and int age
+    // and exposing readonly properties of these
+
+    // DogsHome contains a Dictionay keyed by dogs name, but it can have
+    // many dogs which have the same name
+    // It has a method GetDogsCalled(string) where you pass in the name
+    // and it returns a list of Dogs all with that name
+
+    DogsHome battersea = new DogsHome();
+    battersea.Add(new Dog("Rover", 5));
+    battersea.Add(new Dog("Bonzo", 6));
+    battersea.Add(new Dog("Edna", 7));
+    battersea.Add(new Dog("Bonzo", 8));
+    battersea.Add(new Dog("Rover", 9));
+
+    Assert.Equal(2, battersea.GetDogsCalled("Rover").Count);
+}

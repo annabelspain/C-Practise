@@ -1,0 +1,21 @@
+[Fact]
+public void Marathon_Dictionary()
+{
+    // Add a .Net Standard class library called Races to the solution
+    // In this class library, create 2 new classes - Race and Runner (as in runners in a marathon)
+    // Populate them like this:
+
+    // Runner has an overloaded ctor taking an int number and a string name
+    // It also has a public property Charity that is optionally set
+
+    // Race contains a dictionary of runners keyed by their number
+    // It also contains a method GetWinner(int) where you give it a number and it returns the Runner
+
+    Race londonMarathon = new Race();
+    londonMarathon.Add(new Runner(537, "Donald Trump") { Charity = "n/a" });
+    londonMarathon.Add(new Runner(2071, "Nicola Sturgeon") { Charity = "The Krankies" });
+    londonMarathon.Add(new Runner(125, "Boris Johnson") { Charity = "Hairspray" });
+
+    Runner winner = londonMarathon.GetWinner(2071);
+    Assert.Equal("The Krankies", winner.Charity);
+}
