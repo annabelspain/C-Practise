@@ -1,0 +1,12 @@
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\bin\Debug\net5.0\InterfaceProj.deps.json
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\bin\Debug\net5.0\InterfaceProj.dll
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\bin\Debug\net5.0\ref\InterfaceProj.dll
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\bin\Debug\net5.0\InterfaceProj.pdb
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\InterfaceProj.csproj.AssemblyReference.cache
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\InterfaceProj.GeneratedMSBuildEditorConfig.editorconfig
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\InterfaceProj.AssemblyInfoInputs.cache
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\InterfaceProj.AssemblyInfo.cs
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\InterfaceProj.csproj.CoreCompileInputs.cache
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\InterfaceProj.dll
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\ref\InterfaceProj.dll
+C:\Courseware\QACS\Labs\11  Interfaces\Begin\InterfaceProj\InterfaceProj\obj\Debug\net5.0\InterfaceProj.pdb

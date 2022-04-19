@@ -1,0 +1,14 @@
+        [Fact]
+        public void Compare_Presidents()
+        {
+            List<AssasinatedPresident> assisinations = new List<AssasinatedPresident>() {
+                new AssasinatedPresident("Kennedy", "Dallas", dob:new DateTime(1917, 5, 29), assasinated:new DateTime(1963, 11, 22)),
+                new AssasinatedPresident("Lincoln", "Ford Theatre", dob:new DateTime(1809, 2, 12), assasinated:new DateTime(1865, 4, 15)),
+                new AssasinatedPresident("Perceval", "Houses of Parliament", dob:new DateTime(1762, 11, 1), assasinated: new DateTime(1812, 5, 11)),
+                };
+
+            assisinations.Sort();
+            Assert.Equal("Lincoln", assisinations[0].Name);
+            Assert.Equal("Perceval", assisinations[1].Name);
+            Assert.Equal("Kennedy", assisinations[2].Name);
+        }
