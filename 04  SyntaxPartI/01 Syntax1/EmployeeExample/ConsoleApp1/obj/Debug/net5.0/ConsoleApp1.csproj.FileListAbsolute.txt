@@ -1,0 +1,16 @@
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.exe
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.deps.json
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.json
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.runtimeconfig.dev.json
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\bin\Debug\net5.0\ref\ConsoleApp1.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\bin\Debug\net5.0\ConsoleApp1.pdb
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.AssemblyReference.cache
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.GeneratedMSBuildEditorConfig.editorconfig
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfoInputs.cache
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.AssemblyInfo.cs
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.csproj.CoreCompileInputs.cache
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ref\ConsoleApp1.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.pdb
+C:\Courseware\QACS\Labs\04  SyntaxPartI\01 Syntax1\EmployeeExample\ConsoleApp1\obj\Debug\net5.0\ConsoleApp1.genruntimeconfig.cache

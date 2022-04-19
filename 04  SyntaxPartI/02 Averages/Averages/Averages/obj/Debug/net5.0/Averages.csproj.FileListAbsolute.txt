@@ -1,0 +1,16 @@
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.csproj.AssemblyReference.cache
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.GeneratedMSBuildEditorConfig.editorconfig
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.AssemblyInfoInputs.cache
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.AssemblyInfo.cs
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.csproj.CoreCompileInputs.cache
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\bin\Debug\net5.0\Averages.exe
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\bin\Debug\net5.0\Averages.deps.json
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\bin\Debug\net5.0\Averages.runtimeconfig.json
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\bin\Debug\net5.0\Averages.runtimeconfig.dev.json
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\bin\Debug\net5.0\Averages.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\bin\Debug\net5.0\ref\Averages.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\bin\Debug\net5.0\Averages.pdb
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\ref\Averages.dll
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.pdb
+C:\Courseware\QACS\Labs\04  SyntaxPartI\02 Averages\Averages\Averages\obj\Debug\net5.0\Averages.genruntimeconfig.cache
