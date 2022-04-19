@@ -1,0 +1,33 @@
+﻿@using PizzaProj
+@model PizzaProj.Order
+
+@{
+    ViewData["Title"] = "Details";
+    Checkout checkout = new Checkout(new WeekdayDiscounts());
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>Order</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.CustomerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.CustomerName)
+        </dd>
+    </dl>
+
+    @foreach (Pizza pizza in Model.Pizzas)
+    {
+        <p>@pizza.Crust, @pizza.Size, Price = @pizza.Price</p>
+    }
+    <p><strong>Discounted Price = @checkout.GetBestPrice(Model).TotalPrice</strong></p>
+
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.OrderId">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
