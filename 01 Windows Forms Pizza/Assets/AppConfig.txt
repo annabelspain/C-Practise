@@ -1,0 +1,3 @@
+    <connectionStrings>
+      <add name="PizzaDb" connectionString="Data Source=.\SqlExpress;Database=Pizza;Integrated Security=True;" providerName="System.Data.SqlClient" />
+    </connectionStrings>
