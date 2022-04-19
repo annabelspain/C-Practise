@@ -1,0 +1,11 @@
+        [Fact]
+        public void Statics()
+        {
+            int startCount = Car.Count;            for (int i = 0; i < 42; i++)
+            {
+                new Car();
+            }
+            // Add a static int property Count with a public getter and a private setter which is incremented in the Car ctor
+            // You will need to do this manually - Ctrl+dot won't help you
+            Assert.Equal(42, Car.Count - startCount);
+        }

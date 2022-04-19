@@ -1,0 +1,10 @@
+        [Fact]
+        public void Null_Reference()
+        {
+            // Generate new type Car
+            Car c = null;
+            bool started = c.Start(); // Generate method and delete 'throw new NotImplementedException();'
+            // Put in a not-null test, so that the car is only started if there is a car
+
+            Assert.False(started);
+        }

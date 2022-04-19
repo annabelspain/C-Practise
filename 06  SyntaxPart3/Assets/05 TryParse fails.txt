@@ -1,0 +1,8 @@
+        [Fact]
+        public void Try_Parse_Fails()
+        {
+            string input = "42X";
+            int result;
+            // Nothing to do on this test!!
+            Assert.False(int.TryParse(input, out result));
+        }

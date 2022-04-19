@@ -1,0 +1,8 @@
+        [Fact]
+        public void Enums()
+        {
+            // Get this to compile (hints: enums and 'using static')
+            // Again, the Visual Studio refactoring tools won't help you
+            Car c = new Car() { Make = Ford };
+            Assert.Equal(Ford, c.Make);
+        }

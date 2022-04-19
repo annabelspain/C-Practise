@@ -1,0 +1,9 @@
+        [Fact]
+        public void Null_Reference_Resolve_By_Elvis()
+        {
+            Car c = null;
+            //bool started = c.Start();
+            // Do the same as the previous test but using the Elvis operator
+
+            Assert.Null(started);
+        }

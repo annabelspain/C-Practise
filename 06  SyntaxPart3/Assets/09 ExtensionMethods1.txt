@@ -1,0 +1,14 @@
+        // We will do this in 2 stages
+        // 1) Create an extension method that returns a hard-coded value
+        // 2) Replace the hard-coded value with the proper code
+
+        // Start by creating a public static class called ExtensionMethods in which you have an extension method 
+        // (extending string) called GetLengthsAsNumber1()
+        // In your first stab just return the double 3.141592
+
+        [Fact]
+        public void Extension_Methods_And_Array1()
+        {                   // 3.1  4   1   5      9      2
+            string ditty = @"How I wish I could recollect pi";
+            Assert.Equal(3.141592, ditty.GetLengthsAsNumber1());
+        }

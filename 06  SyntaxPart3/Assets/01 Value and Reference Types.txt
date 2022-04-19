@@ -1,0 +1,15 @@
+        [Fact]
+        public void Value_And_Reference_Types()
+        {
+            // Create a a new public type LatLon in the Syntax2 project
+            // Generate properties Lat and Lon
+            LatLon london = new LatLon() { Lat = 51.0, Lon = 0.0 };
+            LatLon bristol = london;
+            bristol.Lon -= 2.0;
+
+            Assert.True(london.Lat == 51.0);
+            Assert.True(london.Lon == 0.0); // if this fails, did you create a class or a struct?
+
+            Assert.True(bristol.Lat == 51.0);
+            Assert.True(bristol.Lon == -2.0);
+        }

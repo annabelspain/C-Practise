@@ -1,0 +1,8 @@
+        [Fact]
+        public void Try_Parse_Succeeds()
+        {
+            string input = "42";
+            int result;
+            // insert a call to TryParse
+            Assert.Equal(42,result);
+        }

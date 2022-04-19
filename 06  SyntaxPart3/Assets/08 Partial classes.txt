@@ -1,0 +1,13 @@
+        // Create a folder named FromDatabase in your Syntax2 project
+        // Create a partial class Car in there with the same namespace as the Car at the project level
+        // Make the Car at the project level also a partial class
+        // Move the Make to the 'FromDatabase' Car and add a string RegNumber
+        // The following should then compile
+
+        // We do this such that we could completely reconstruct the 'FromDatabase' bit of the Car class directly from the database 
+        // to guarantee that its in sync
+        [Fact]
+        public void Partial_Classes()
+        {
+            Car c = new Car() { Make = Ford, RegNumber = "ABC 123" };
+        }
