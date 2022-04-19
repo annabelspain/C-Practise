@@ -1,0 +1,15 @@
+        private static ServiceProvider ConfigureServices()
+        {
+            var builder = new ConfigurationBuilder()
+                .SetBasePath(Directory.GetCurrentDirectory())
+                .AddJsonFile("appsettings.json", optional: true, reloadOnChange: true);
+            IConfigurationRoot configuration = builder.Build();
+            string strConn = configuration.GetConnectionString("conn");
+            Console.WriteLine(configuration.GetConnectionString("conn"));
+
+            var services = new ServiceCollection();
+            //services.AddDbContext<NorthwindContext>(options => options.UseSqlServer(strConn));
+
+            var serviceProvider = services.BuildServiceProvider();
+            return serviceProvider;
+        }

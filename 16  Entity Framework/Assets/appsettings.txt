@@ -1,0 +1,5 @@
+{
+  "ConnectionStrings": {
+    "conn": "Server=.\\SqlExpress;database=Zoo;trusted_connection=true;MultipleActiveResultSets=True"
+  }
+}
