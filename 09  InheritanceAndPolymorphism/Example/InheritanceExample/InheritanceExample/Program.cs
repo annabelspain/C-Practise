@@ -43,6 +43,19 @@ namespace InheritanceExample
             };
             //call the speak method
             dog2.Speaks();
+
+            Console.WriteLine();
+            Console.WriteLine("Cat1 Instance");
+
+            //create a new instance of Cat
+            Animal cat1 = new Cat
+            {
+                Name = "Timmy",
+                Colour = "Orange",
+                Legs = 4
+            };
+            //call the speak method
+            cat1.Speaks();
         }
     }
 }
