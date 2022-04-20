@@ -1,0 +1,16 @@
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\bin\Debug\net5.0\InheritanceExample.exe
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\bin\Debug\net5.0\InheritanceExample.deps.json
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\bin\Debug\net5.0\InheritanceExample.runtimeconfig.json
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\bin\Debug\net5.0\InheritanceExample.runtimeconfig.dev.json
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\bin\Debug\net5.0\InheritanceExample.dll
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\bin\Debug\net5.0\ref\InheritanceExample.dll
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\bin\Debug\net5.0\InheritanceExample.pdb
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.csproj.AssemblyReference.cache
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.GeneratedMSBuildEditorConfig.editorconfig
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.AssemblyInfoInputs.cache
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.AssemblyInfo.cs
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.csproj.CoreCompileInputs.cache
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.dll
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\ref\InheritanceExample.dll
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.pdb
+C:\Courseware\QACS\Labs\09  InheritanceAndPolymorphism\Example\InheritanceExample\InheritanceExample\obj\Debug\net5.0\InheritanceExample.genruntimeconfig.cache
