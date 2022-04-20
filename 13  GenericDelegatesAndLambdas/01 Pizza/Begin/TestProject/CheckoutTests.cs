@@ -1,6 +1,7 @@
 using PizzaProj;
 using System;
 using Xunit;
+using static PizzaProj.BestDiscount;
 
 namespace TestProject
 {
@@ -49,6 +50,18 @@ namespace TestProject
             Assert.Equal(8M, priceData.TotalPrice);
             Assert.Equal(DiscountPolicyName.Five_Dollars_Off_StuffedCrust, priceData.DiscountPolicyName);
         }
+
+        [Fact]
+        public void Weekend_Ten_Percent_Off()
+        {
+            checkout = new Checkout(new WeekendDiscounts());
+            order.Pizzas.Add(new Pizza(Size.Small_10, Crust.Regular_2));
+            PriceData priceData = checkout.GetBestPrice(order);
+            Assert.Equal(10.8M, priceData.TotalPrice);
+            Assert.Equal(DiscountPolicyName.Weekend_10_Percent_Off,
+           priceData.DiscountPolicyName);
+        }
+
 
     }
 }
