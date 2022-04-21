@@ -59,16 +59,19 @@ namespace MoreLINQ
 
             int[] numbers = { 1, 11, 3, 19, 41, 65, 19 };
 
-            bool containsOnlyOddNumbers = true;
-            foreach (int i in numbers)
-            {
-                if (i % 2 == 0)
-                {
-                    containsOnlyOddNumbers = false;
-                }
-            }
+            //bool containsOnlyOddNumbers = true;
+            //foreach (int i in numbers)
+            //{
+            //    if (i % 2 == 0)
+            //    {
+            //        containsOnlyOddNumbers = false;
+            //    }
+            //}
 
-            Assert.True(containsOnlyOddNumbers);
+            //Only need to use one of the below 
+
+            Assert.False(numbers.Any(i => i % 2 == 0));
+            Assert.True(numbers.All(i => i % 2 != 0));
 
             // LINQ (hint: Any() All()
         }
@@ -90,6 +93,13 @@ namespace MoreLINQ
             }
             Assert.True(match1);
 
+            bool match2 = wordsA.SequenceEqual(wordsB);
+            Assert.True(match2);
+
+
+            Assert.True(wordsA.SequenceEqual(wordsB));
+            //Assert.True(match1.SequenceEquals(wordsA => wordsA[i] == wordsB[i]));
+
             // LINQ {hint: SequenceEquals() )
         }
 
@@ -99,17 +109,23 @@ namespace MoreLINQ
             // Create a List to store the expensive stock
             // Get each product in turn from GetProducts()
             // If its in stock and > £3 then add it to the expensive stock list
-            List<Product> expensiveInStockProducts1 = new List<Product>();
-            foreach (Product prod in GetProducts())
-            {
-                if (prod.UnitsInStock > 0 && prod.UnitPrice > 3.00M)
-                {
-                    expensiveInStockProducts1.Add(prod);
-                }
-            }
-            Assert.Equal(71, expensiveInStockProducts1.Count);
+            //List<Product> expensiveInStockProducts1 = new List<Product>();
+            //foreach (Product prod in GetProducts())
+            //{
+            //    if (prod.UnitsInStock > 0 && prod.UnitPrice > 3.00M)
+            //    {
+            //        expensiveInStockProducts1.Add(prod);
+            //    }
+            //}
+            //Assert.Equal(71, expensiveInStockProducts1.Count);
 
             // Using LINQ (hint: from/where/select Count() )
+
+            var products =
+                from p in GetProducts()
+                where (p.UnitsInStock > 0 && p.UnitPrice > 3.00M)
+                select p;
+            Assert.Equal(71, products.Count());
         }
 
         [Fact]
@@ -121,17 +137,19 @@ namespace MoreLINQ
             // if the answer is 'yes', the length is less than or equal to the index
             // then store the index
 
-            List<int> lengthLTIndex1 = new List<int>();
-            for (int i = 0; i < digits.Length; i++)
-            {
-                if (digits[i].Length <= i)
-                {
-                    lengthLTIndex1.Add(i);
-                }
-            }
-            Assert.Equal(6, lengthLTIndex1.Count);
+            //List<int> lengthLTIndex1 = new List<int>();
+            //for (int i = 0; i < digits.Length; i++)
+            //{
+            //    if (digits[i].Length <= i)
+            //    {
+            //        lengthLTIndex1.Add(i);
+            //    }
+            //}
+            //Assert.Equal(6, lengthLTIndex1.Count);
 
             // Using LINQ (hint: Where() )
+            var LengthLTIndex2 = digits.Where((str, index) => str.Length <= index);
+            Assert.Equal(6, LengthLTIndex2.Count());
         }
 
         [Fact]
@@ -171,6 +189,17 @@ namespace MoreLINQ
             Assert.Equal("cherry", sortedWords1[2]);
 
             // Using LINQ (hint: from/orderby/select ToList())
+
+
+            var sortedWords2 = from w in words
+                               orderby w
+                               select w;
+            //Above is the same as below ^ v so could use either 
+            sortedWords2 = words.OrderBy(w => w);
+
+
+           Assert.Equal("cherry", sortedWords2.ToList()[2]);
+
         }
 
         [Fact]
@@ -202,7 +231,17 @@ namespace MoreLINQ
             productsInPriceOrder.RemoveRange(0, productsInPriceOrder.Count - 10);
             Assert.Equal(45.6M, productsInPriceOrder[0].UnitPrice);
 
+
             // Using LINQ (hint: from/orderby/descending/select, Take(), Reverse(), First())
+            //We want the last 10, so first we take the last then and then change it to ascending order, which is why we use descending to take the last 10 and then reverse it to the correct ascending order 
+            var productsInPriceOrder2 = from g in GetProducts()
+                                        orderby g.UnitPrice descending 
+                                        select g.UnitPrice;
+
+            //Both lines below are the same 
+            Assert.Equal(45.6M, productsInPriceOrder2.Take(10).Reverse().ToList()[0]);
+            Assert.Equal(45.6M, productsInPriceOrder2.Take(10).Reverse().First());
+
         }
 
         [Fact]
@@ -210,7 +249,7 @@ namespace MoreLINQ
         {
             // This is the sort of pagination problem you get when displaying records that are
             // too numerous to fit onto 1 page. You have to paginate
-            // First get a list of all proucts that are in stock
+            // First get a list of all products that are in stock
             // Then loop round this list discarding those that would be on Page1 and Page2
             // and store the next 10 as what must be shown on Page3
 
@@ -234,6 +273,16 @@ namespace MoreLINQ
             Assert.Equal(34, paginate1.Last().ProductID);
 
             // Using LINQ (hint: from/where/select Skip(), Take() )
+
+            var paginate2 = from p in GetProducts()
+                            where p.UnitsInStock > 0
+                            select p;
+
+            paginate2 = paginate2.Skip((pageNumber - 1) * PRODUCTS_PER_PAGE).Take(PRODUCTS_PER_PAGE);
+
+            Assert.Equal(23, paginate1.First().ProductID);
+            Assert.Equal(34, paginate1.Last().ProductID);
+
         }
 
         [Fact]
@@ -270,6 +319,11 @@ namespace MoreLINQ
             Assert.Equal(6, intersection.Count);
 
             // LINQ (hint: Select(), Intersect() )
+
+            var intersection2 = GetProducts().Select(p => p.ProductName[0]).Intersect(GetProducts().Select(p => p.Category[0]));
+
+            Assert.Equal(6, intersection2.Count());
+
         }
 
         [Fact]
@@ -323,6 +377,32 @@ namespace MoreLINQ
 
 
             // Using LINQ (hint: from/group, OrderBy(), First(), Last(), Sum()
+
+            // for every category, give us a list of products, is why we do not need the select statement here 
+            var groupByCategory2 = from p in GetProducts()
+                                   group p by p.Category;
+            //These two statements are the same ^ v 
+            groupByCategory2 = GetProducts().GroupBy(p => p.Category);
+
+
+            //order categories 
+            var orderedCategory = groupByCategory2.OrderBy(g => g.Sum(p => p.UnitPrice));
+
+
+            string strMaxCategoryName2 = orderedCategory.Last().Key;
+            string strMinCategoryName2 = orderedCategory.First().Key;
+            decimal maxCategoryPrices2 = orderedCategory.Last().Sum(p => p.UnitPrice);
+            decimal minCategoryPrices2 = orderedCategory.First().Sum(p => p.UnitPrice);
+            // This is the same as the above code just using the min max value
+            maxCategoryPrices2 = groupByCategory.Max(g => g.Value.Sum(p => p.UnitPrice));
+
+
+            Assert.Equal("Beverages", strMaxCategoryName2);
+            Assert.Equal(455.75M, maxCategoryPrices2);
+
+            Assert.Equal("Grains/Cereals", strMinCategoryName2);
+            Assert.Equal(141.75M, minCategoryPrices2);
+
         }
 
     }
