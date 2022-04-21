@@ -18,7 +18,7 @@ namespace TestProject
         [Fact]
         public void No_Discount()
         {
-            order.Pizzas.Add(new Pizza(Size.Small_10, Crust.Regular_2));
+            order.Add(new Pizza(Size.Small_10, Crust.Regular_2));
 
             PriceData priceData = checkout.GetBestPrice(order);
 
@@ -29,9 +29,9 @@ namespace TestProject
         [Fact]
         public void Cheapest_Is_Free()
         {
-            order.Pizzas.Add(new Pizza(Size.Small_10, Crust.Regular_2));
-            order.Pizzas.Add(new Pizza(Size.Small_10, Crust.Regular_2));
-            order.Pizzas.Add(new Pizza(Size.Medium_15, Crust.Thin_4));
+            order.Add(new Pizza(Size.Small_10, Crust.Regular_2));
+            order.Add(new Pizza(Size.Small_10, Crust.Regular_2));
+            order.Add(new Pizza(Size.Medium_15, Crust.Thin_4));
 
             PriceData priceData = checkout.GetBestPrice(order);
 
@@ -42,7 +42,7 @@ namespace TestProject
         [Fact]
         public void Five_Dollars_Off_Stuffed_Crust()
         {
-            order.Pizzas.Add(new Pizza(Size.Small_10, Crust.Stuffed_3));
+            order.Add(new Pizza(Size.Small_10, Crust.Stuffed_3));
 
             PriceData priceData = checkout.GetBestPrice(order);
 
@@ -54,7 +54,7 @@ namespace TestProject
         public void Weekend_Ten_Percent_Off()
         {
             checkout = new Checkout(new WeekendDiscounts());
-            order.Pizzas.Add(new Pizza(Size.Small_10, Crust.Regular_2));
+            order.Add(new Pizza(Size.Small_10, Crust.Regular_2));
 
             PriceData priceData = checkout.GetBestPrice(order);
 

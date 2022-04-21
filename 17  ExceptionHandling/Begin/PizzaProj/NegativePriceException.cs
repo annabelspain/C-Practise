@@ -1,11 +1,12 @@
 ﻿using PizzaProj;
 using System;
 
-namespace PizzaProj.Checkout
+namespace PizzaProj
 {
     public class NegativePriceException : Exception
     {
-        public NegativePriceException()
+        public NegativePriceException(string message):
+            base(message)
         {
 
         }
