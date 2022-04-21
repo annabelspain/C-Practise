@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "uBhrrR+07Ke/ECoBzzppoHa58PXwoKCqUf3NUqEo2ADEj1jC9r7vwnJ8ZTAPMafu7nSTc+KWxnZO1URD63AGFg==",
+  "success": true,
+  "projectFilePath": "C:\\Courseware\\QACS\\Labs\\17  ExceptionHandling\\Begin\\PizzaProj\\PizzaProj.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Admin\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Admin\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}

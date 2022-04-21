@@ -16,6 +16,9 @@ namespace PizzaProj
         {
             DiscountPolicyData discountPolicyData = bestDiscount.GetBestDiscount(order);
             PriceData priceData = new PriceData(discountPolicyData.DiscountPolicyName, order.NonDiscountedPrice, discountPolicyData.Discount);
+
+            if (priceData.TotalPrice < 0)
+                throw new NegativePriceException("Price cannot be negative");
             return priceData;
         }
     }

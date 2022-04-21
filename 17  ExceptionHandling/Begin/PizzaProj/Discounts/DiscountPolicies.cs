@@ -11,7 +11,7 @@ namespace PizzaProj
         {
             System.Diagnostics.Debug.WriteLine("CheapestIsFree");
             var pizzas = order.Pizzas;
-            if (pizzas.Count < 2)
+            if (pizzas.Count() < 2)
             {
                 return new DiscountPolicyData(DiscountPolicyName.None, 0M);
             }
